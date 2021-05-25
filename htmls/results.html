@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
+</head>
+
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    What's the weather like?
+                </h1>
+            </div>
+            <div style="text-align: center;">
+            <a href="/">Powrót na stronę główną</a>
+        </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-offset-4 is-4">
+                    <div class="box">
+                        <article class="media">
+                            <div class="media-left">
+                                <figure class="image is-50x50">
+                                    <img src="http://openweathermap.org/img/w/{{ icon }}.png" alt="Image">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <span class="title">{{ city }}</span>
+                                        <br>
+                                        <span class="subtitle">{{ temperature }}° C</span>
+                                        <br> {{ description }}
+                                        <br>
+                                         <span class="subtitle">Średnia temeperatura z najbliższych 7 dni</span>
+                                        <br> {{ mean_day }}° C
+                                        <br>
+                                        <span class="subtitle">Średnia temeperatura rano</span>
+                                        <br> {{ mean_morn }}° C
+                                        <br>
+                                        <span class="subtitle">Średnia temeperatura wieczór</span>
+                                        <br> {{ mean_eve }}° C
+                                        <br>
+                                        <span class="subtitle">Średnia moc generowana przez panele słoneczne w latach {{start_year}} - {{end_year}}</span>
+                                        <br> {{ mean_pow }} W
+                                        <br>
+                                        <span class="subtitle">Średnia prędkość wiartu</span>
+                                        <br> {{ mean_wind }} m/s
+                                        <br>
+                                        <span class="subtitle">Średnie nasłonecznienie paneli</span>
+                                        <br> {{ mean_irr }} W/m^2
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    </footer>
+</body>
+
+</html>

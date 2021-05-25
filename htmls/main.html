@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>PVGIS</title>
+    </head>
+    <body>
+        <form action="/api/search" method="get">
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city">
+            <br>
+            <label for="lat">Latitude:</label>
+            <input type="text" name="lat" id="lat">
+            <br>
+            <label for="lon">Longitude:</label>
+            <input type="text" name="lon"id="lon">
+            <br>
+            <label for="start_year">Start year:</label>
+            <input type="text" name="start_year"id="start_year">
+            <br>
+            <label for="end_year">End year:</label>
+            <input type="text" name="end_year"id="end_year">
+            <br>
+            <label for="slope">Angle:</label>
+            <input type="number" name="slope" id="slope">
+            <br>
+            <label for="azimuth">Azimuth:</label>
+            <input id="azimuth" name="azimuth">
+            <br>
+            <label for="technology">Technology:</label>
+            <input id="technology" name="technology">
+            <br>
+            <label for="peakPower">Peak power:</label>
+            <input id="peakPower" name="peakPower">
+            <br>
+            <label for="loss">Loss:</label>
+            <input id="loss" name="loss">
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
